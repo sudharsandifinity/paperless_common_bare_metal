@@ -82,6 +82,7 @@ RUN set -eux \
 
 # Copy our service defs and filesystem
 COPY ./docker/rootfs /
+RUN find /etc/s6-overlay -type f -exec chmod +x {} \;
 
 # Stage: main-app
 # Purpose: The final image
@@ -225,6 +226,7 @@ COPY --from=compile-frontend --chown=1000:1000 /src/src/documents/static/fronten
 # add users, setup scripts
 # Mount the compiled frontend to expected location
 RUN set -eux \
+  && chmod +x /usr/local/bin/deduplicate.py \
   && sed -i '1s|^#!/usr/bin/env python3|#!/command/with-contenv python3|' manage.py \
   && echo "Setting up user/group" \
     && addgroup --gid 1000 paperless \
