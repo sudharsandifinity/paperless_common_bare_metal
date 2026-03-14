@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      <url>
+        <loc>https://docs.paperless-ngx.com/</loc>
+      </url>
+      <url>
+        <loc>https://docs.paperless-ngx.com/setup/</loc>
+      </url>
+      <url>
+        <loc>https://docs.paperless-ngx.com/usage/</loc>
+      </url>
+      <url>
+        <loc>https://docs.paperless-ngx.com/configuration/</loc>
+      </url>
+      <url>
+        <loc>https://docs.paperless-ngx.com/administration/</loc>
+      </url>
+      <url>
+        <loc>https://docs.paperless-ngx.com/advanced_usage/</loc>
+      </url>
+      <url>
+        <loc>https://docs.paperless-ngx.com/api/</loc>
+      </url>
+      <url>
+        <loc>https://docs.paperless-ngx.com/development/</loc>
+      </url>
+      <url>
+        <loc>https://docs.paperless-ngx.com/faq/</loc>
+      </url>
+      <url>
+        <loc>https://docs.paperless-ngx.com/troubleshooting/</loc>
+      </url>
+      <url>
+        <loc>https://docs.paperless-ngx.com/changelog/</loc>
+      </url>
+</urlset>
