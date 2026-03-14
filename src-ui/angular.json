@@ -71,8 +71,8 @@
             "tsConfig": "tsconfig.app.json",
             "localize": true,
             "assets": [
-              "src/favicon.ico",
-              "src/apple-touch-icon.png",
+              "src/assets/HLB-logo.png",
+              "src/assets/HLB-logo.png",
               "src/assets",
               "src/manifest.webmanifest",
               {
