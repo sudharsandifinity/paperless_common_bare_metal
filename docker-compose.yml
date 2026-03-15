@@ -43,7 +43,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: hlbdocs-local:latest
+    # image: hlbdocs-local:latest
     restart: unless-stopped
     depends_on:
       - db
