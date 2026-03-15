@@ -691,9 +691,9 @@ def _parse_db_settings() -> dict:
 
         databases["default"] = {
             "HOST": os.getenv("PAPERLESS_DBHOST"),
-            "NAME": os.getenv("PAPERLESS_DBNAME", "paperless"),
-            "USER": os.getenv("PAPERLESS_DBUSER", "paperless"),
-            "PASSWORD": os.getenv("PAPERLESS_DBPASS", "paperless"),
+            "NAME": os.getenv("PAPERLESS_DBNAME", "praszodocs"),
+            "USER": os.getenv("PAPERLESS_DBUSER", "praszo-sudharsan"),
+            "PASSWORD": os.getenv("PAPERLESS_DBPASS", "LK&85K7052#"),
             "OPTIONS": {},
         }
         if os.getenv("PAPERLESS_DBPORT"):

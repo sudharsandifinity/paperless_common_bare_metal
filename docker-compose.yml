@@ -36,14 +36,14 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql
     environment:
-      POSTGRES_DB: hlbdocs
-      POSTGRES_USER: hlb-sudharsan
-      POSTGRES_PASSWORD: 58&KL@85S
+      POSTGRES_DB: praszodocs
+      POSTGRES_USER: praszo-sudharsan
+      POSTGRES_PASSWORD: LK&85K7052#
   webserver:
     build:
       context: .
       dockerfile: Dockerfile
-    image: hlbdocs-local:latest
+    image: praszo/docs:1.0
     restart: unless-stopped
     depends_on:
       - db

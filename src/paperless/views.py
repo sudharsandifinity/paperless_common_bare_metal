@@ -96,10 +96,10 @@ class StandardPagination(PageNumberPagination):
 class FaviconView(View):
     def get(self, request, *args, **kwargs):
         try:
-            path = Path(staticfiles_storage.path("paperless/img/favicon.ico"))
+            path = Path(staticfiles_storage.path("paperless/img/DocsLogomark.svg"))
             return FileResponse(path.open("rb"), content_type="image/x-icon")
         except FileNotFoundError:
-            return HttpResponseNotFound("favicon.ico not found")
+            return HttpResponseNotFound("DocsLogomark.svg not found")
 
 
 class UserViewSet(ModelViewSet):
