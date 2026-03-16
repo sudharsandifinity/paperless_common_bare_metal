@@ -41,9 +41,9 @@ services:
       POSTGRES_PASSWORD: LK&85K7052#
   webserver:
     build:
-      context: .
-      dockerfile: Dockerfile
-    image: praszo/docs:1.0
+        context: .
+        dockerfile: Dockerfile
+    image: sudharsan18/praszodocs:1.0
     restart: unless-stopped
     depends_on:
       - db
@@ -59,6 +59,7 @@ services:
     environment:
       PAPERLESS_REDIS: redis://broker:6379
       PAPERLESS_DBHOST: db
+      PAPERLESS_CSRF_TRUSTED_ORIGINS: https://docsd1.praszo.com/
 volumes:
   data:
   media:
