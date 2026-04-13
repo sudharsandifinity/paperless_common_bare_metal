@@ -36,20 +36,20 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql
     environment:
-      POSTGRES_DB: hlbdocs
-      POSTGRES_USER: hlb-sudharsan
-      POSTGRES_PASSWORD: 58&KL@85S
+      POSTGRES_DB: mydocs
+      POSTGRES_USER: sudharsan-docs
+      POSTGRES_PASSWORD: 958402RT71
   webserver:
     build:
-      context: .
-      dockerfile: Dockerfile
-    image: hlbdocs-local:latest
+        context: .
+        dockerfile: Dockerfile
+    image: sudharsan18/mydocs:1.0
     restart: unless-stopped
     depends_on:
       - db
       - broker
     ports:
-      - "8000:8000"
+      - "8018:8000"
     volumes:
       - data:/usr/src/paperless/data
       - media:/usr/src/paperless/media
@@ -59,6 +59,7 @@ services:
     environment:
       PAPERLESS_REDIS: redis://broker:6379
       PAPERLESS_DBHOST: db
+      PAPERLESS_CSRF_TRUSTED_ORIGINS: 
 volumes:
   data:
   media:
